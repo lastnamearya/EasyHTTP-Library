@@ -13,15 +13,25 @@ easyHTTP.prototype.get = function(url, callback) {
       if(self.http.status === 200) {
         callback(null, self.http.responseText);
       } else {
-        callback('Error: ' + self.http.status);
+        callback('Error: ' + self.http.status); 
       }
-  }
+  } 
 
   this.http.send();
 }
 
-
 // Make an HTTP POST request
+easyHTTP.prototype.post = function(url, data, callback) {
+  this.http.open('POST', url, true);
+  this.http.setRequestHeader('content-type', 'application/json');
+  
+  let self = this;
+  this.http.onload = function() {
+        callback('Error: ' + self.http.status); 
+  } 
+
+  this.send(JSON.stringify(data));
+}
 
 // Make an HTTP PUT request
 
