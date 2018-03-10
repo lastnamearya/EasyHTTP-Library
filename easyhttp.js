@@ -27,10 +27,10 @@ easyHTTP.prototype.post = function(url, data, callback) {
   
   let self = this;
   this.http.onload = function() {
-        callback('Error: ' + self.http.status); 
+    callback(null, self.http.responseText); 
   } 
 
-  this.send(JSON.stringify(data));
+  this.http.send(JSON.stringify(data));
 }
 
 // Make an HTTP PUT request
