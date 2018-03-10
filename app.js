@@ -43,10 +43,10 @@ http.put('https://jsonplaceholder.typicode.com/posts/2', data,  function(err, po
 });
 
 // Delete Post
-http.delete('https://jsonplaceholder.typicode.com/posts/1',  function(err, posts) {
+http.delete('https://jsonplaceholder.typicode.com/posts/1',  function(err, response) {
   if(err){
     console.log(err);
   } else {
-    console.log(posts);
+    console.log(response);
   }
 });
