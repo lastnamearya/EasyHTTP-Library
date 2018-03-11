@@ -14,7 +14,12 @@ const data = {
   email: 'jdoe@gmail.com'
 }
 
-// Create Post
-http.post('https://jsonplaceholder.typicode.com/users', data)
+// // Create Post 
+// http.post('https://jsonplaceholder.typicode.com/users', data)
+// .then(data => console.log(data))
+// .catch(err => console.log(err));
+
+// Update Post
+http.put('https://jsonplaceholder.typicode.com/users/1', data)
 .then(data => console.log(data))
 .catch(err => console.log(err));
