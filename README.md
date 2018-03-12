@@ -27,4 +27,7 @@ There are three version of this Library, seprated in different directories
  
 
 
+
+
 :tada: lastnamearya ~ twitter / github
+:email: arya.jigyasu6815@gmail.com
