@@ -21,7 +21,7 @@ There are three version of this Library, seprated in different directories
 - ES6 Classes
 - Promises
 
-### Version 3.0 - After learning ES7 - Async / Await deeply, integrated them to work the Fetch API  :fire:  :fire:  :fire:
+### Version 3.0 - After learning ES7 - Async / Await deeply, integrated them to work with the Fetch API  :fire:  :fire:  :fire:
 - - - - 
 - ES7 - Async + Await
  
